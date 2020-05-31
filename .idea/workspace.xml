@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="029f1705-232c-4fb7-8fae-034bd0cf8926" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/rc-wordlist/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/rc-wordlist/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rc-wordlist/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/rc-wordlist/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rc-wordlist/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/rc-wordlist/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rc-wordlist/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/rc-wordlist/src/index.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/rc-wordlist" />
+  </component>
+  <component name="ProjectId" id="1cV6ItafmRpwUTdTdHxmDKr7SLh" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js.last.introduce.type" value="LET" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/rc-wordlist/src/components/functional" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\SOLON\dev\flatiron\labs\p5-arthur-react-redux-120919FT\rc-wordlist\src\components\functional" />
+      <recent name="C:\Users\SOLON\dev\flatiron\labs\p5-arthur-react-redux-120919FT\rc-wordlist\src\reducers" />
+      <recent name="C:\Users\SOLON\dev\flatiron\labs\p5-arthur-react-redux-120919FT\rc-wordlist\src\actions" />
+      <recent name="C:\Users\SOLON\dev\flatiron\labs\p5-arthur-react-redux-120919FT\rc-wordlist\src\components" />
+      <recent name="C:\Users\SOLON\dev\flatiron\labs\p5-arthur-react-redux-120919FT\rc-wordlist\src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\SOLON\dev\flatiron\labs\p5-arthur-react-redux-120919FT\rc-wordlist\src\components\container" />
+      <recent name="C:\Users\SOLON\dev\flatiron\labs\p5-arthur-react-redux-120919FT\rc-wordlist\src\components\functional" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="029f1705-232c-4fb7-8fae-034bd0cf8926" name="Default Changelist" comment="" />
+      <created>1590601357503</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1590601357503</updated>
+      <workItem from="1590601460559" duration="789000" />
+      <workItem from="1590603559966" duration="9163000" />
+      <workItem from="1590617440418" duration="207000" />
+      <workItem from="1590620929288" duration="5791000" />
+      <workItem from="1590676052113" duration="24550000" />
+      <workItem from="1590855813096" duration="4739000" />
+      <workItem from="1590862992977" duration="6366000" />
+      <workItem from="1590958386428" duration="5232000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1590614350539">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1590614350539" />
+    <state x="702" y="370" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1590614099665">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="702" y="370" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1590614099665" />
+    <state x="-24" y="209" width="1736" height="856" key="DiffContextDialog" timestamp="1590617633680">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-24" y="209" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590617633680" />
+    <state x="781" y="389" key="FileChooserDialogImpl" timestamp="1590950933742">
+      <screen x="0" y="0" width="2000" height="1293" />
+    </state>
+    <state x="781" y="389" key="FileChooserDialogImpl/0.0.2000.1293@0.0.2000.1293" timestamp="1590950933742" />
+    <state x="119" y="242" width="1736" height="856" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1590617633680">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="119" y="242" width="1736" height="856" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590617633680" />
+    <state x="216" y="131" width="1163" height="1111" key="dock-window-1" timestamp="1590810876259">
+      <screen x="0" y="0" width="2000" height="1293" />
+    </state>
+    <state x="216" y="131" width="1163" height="1111" key="dock-window-1/0.0.2000.1293@0.0.2000.1293" timestamp="1590810876259" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1590608514195">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1590608514195" />
+  </component>
+</project>
