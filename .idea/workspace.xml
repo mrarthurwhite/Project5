@@ -5,6 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="029f1705-232c-4fb7-8fae-034bd0cf8926" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-wordlist/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/api-wordlist/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-wordlist/db/development.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/api-wordlist/db/development.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-wordlist/log/development.log" beforeDir="false" afterPath="$PROJECT_DIR$/api-wordlist/log/development.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rc-wordlist" beforeDir="false" afterPath="$PROJECT_DIR$/rc-wordlist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rc-wordlist/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/rc-wordlist/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rc-wordlist/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/rc-wordlist/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rc-wordlist/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/rc-wordlist/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rc-wordlist/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/rc-wordlist/src/App.js" afterDir="false" />
@@ -23,7 +30,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/rc-wordlist" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1cV6ItafmRpwUTdTdHxmDKr7SLh" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -46,16 +53,16 @@
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\SOLON\dev\flatiron\labs\p5-arthur-react-redux-120919FT\rc-wordlist\src\components\container" />
+      <recent name="C:\Users\SOLON\dev\flatiron\labs\p5-arthur-react-redux-120919FT\rc-wordlist\src\components\functional" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\SOLON\dev\flatiron\labs\p5-arthur-react-redux-120919FT\rc-wordlist\src\components\functional" />
       <recent name="C:\Users\SOLON\dev\flatiron\labs\p5-arthur-react-redux-120919FT\rc-wordlist\src\reducers" />
       <recent name="C:\Users\SOLON\dev\flatiron\labs\p5-arthur-react-redux-120919FT\rc-wordlist\src\actions" />
       <recent name="C:\Users\SOLON\dev\flatiron\labs\p5-arthur-react-redux-120919FT\rc-wordlist\src\components" />
       <recent name="C:\Users\SOLON\dev\flatiron\labs\p5-arthur-react-redux-120919FT\rc-wordlist\src" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\SOLON\dev\flatiron\labs\p5-arthur-react-redux-120919FT\rc-wordlist\src\components\container" />
-      <recent name="C:\Users\SOLON\dev\flatiron\labs\p5-arthur-react-redux-120919FT\rc-wordlist\src\components\functional" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -76,6 +83,7 @@
       <workItem from="1590855813096" duration="4739000" />
       <workItem from="1590862992977" duration="6366000" />
       <workItem from="1590958386428" duration="5232000" />
+      <workItem from="1590981442150" duration="3817000" />
     </task>
     <servers />
   </component>
