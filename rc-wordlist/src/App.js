@@ -50,7 +50,7 @@ class App extends Component {
     }
 }
 const mapStateToProps = state => {
-    console.log("mapstatetoprops state.wordsReducer.words" + state.wordsReducer.words)
+    console.log("App.js mapstatetoprops state.wordsReducer.words" + state.wordsReducer.words)
     //debugger;
     return {
         words: state.wordsReducer.words,
@@ -58,7 +58,7 @@ const mapStateToProps = state => {
     }
 }
 const mapDispatchToProps = dispatch => {
-    console.log("mapDispatchToProps " )
+    console.log("App.js: mapDispatchToProps  " );
     //debugger;
     return {fetchAllWords: () => dispatch(fetchAllWords())}
 }

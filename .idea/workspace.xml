@@ -5,17 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="029f1705-232c-4fb7-8fae-034bd0cf8926" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-wordlist/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/api-wordlist/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-wordlist/db/development.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/api-wordlist/db/development.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-wordlist/log/development.log" beforeDir="false" afterPath="$PROJECT_DIR$/api-wordlist/log/development.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rc-wordlist" beforeDir="false" afterPath="$PROJECT_DIR$/rc-wordlist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-wordlist/tmp/pids/server.pid" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/rc-wordlist/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/rc-wordlist/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rc-wordlist/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/rc-wordlist/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rc-wordlist/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/rc-wordlist/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rc-wordlist/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/rc-wordlist/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rc-wordlist/src/actions/wordsActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/rc-wordlist/src/actions/wordsActions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rc-wordlist/src/components/functional/Word.js" beforeDir="false" afterPath="$PROJECT_DIR$/rc-wordlist/src/components/functional/Word.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rc-wordlist/src/components/functional/WordDisplay.js" beforeDir="false" afterPath="$PROJECT_DIR$/rc-wordlist/src/components/functional/WordDisplay.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rc-wordlist/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/rc-wordlist/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rc-wordlist/src/reducers/wordReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/rc-wordlist/src/reducers/wordReducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +31,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/rc-wordlist" />
   </component>
   <component name="ProjectId" id="1cV6ItafmRpwUTdTdHxmDKr7SLh" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -42,6 +43,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JavaScript" />
     <property name="js.last.introduce.type" value="LET" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/rc-wordlist/src/components/functional" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -83,7 +85,8 @@
       <workItem from="1590855813096" duration="4739000" />
       <workItem from="1590862992977" duration="6366000" />
       <workItem from="1590958386428" duration="5232000" />
-      <workItem from="1590981442150" duration="3817000" />
+      <workItem from="1590981442150" duration="11599000" />
+      <workItem from="1591325980249" duration="181000" />
     </task>
     <servers />
   </component>

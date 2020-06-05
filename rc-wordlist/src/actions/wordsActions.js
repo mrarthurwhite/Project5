@@ -1,3 +1,5 @@
+export const addWord = word => ({ type: "ADD_WORD", word })
+
 export const fetchAllWords = () => {
     console.log("inside fetchAllWords " )
 
@@ -5,16 +7,13 @@ export const fetchAllWords = () => {
         dispatch({ type: 'LOADING_ALL_WORDS'})
         fetch('http://localhost:4000/words')
             .then(response => {
-                    return response.json()})
+                return response.json()})
             .then(responseJSON => {
                 console.log("inside then then fetchAllWords " + responseJSON);
                 dispatch({ type: 'ALL_WORDS', words: responseJSON })
-        })
+            })
     }
 }
-
-export const addWord = word => ({ type: "ADD_WORD", word })
-
 export const createWord = (word) => {
     return dispatch => {
         let body = {word};
