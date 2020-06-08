@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import {Route} from "react-router-dom";
 import { fetchAllWords } from './actions/wordsActions'
 import WordList from './components/functional/WordList';
-import WordDisplay  from "./components/functional/WordDisplay";
+import WordDisplay  from "./components/container/WordDisplay";
 import NavBar from "./components/functional/NavBar";
 import Home from "./components/functional/Home";
 import NewWord from "./components/container/NewWord";

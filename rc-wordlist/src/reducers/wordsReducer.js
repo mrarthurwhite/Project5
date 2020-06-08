@@ -3,7 +3,7 @@ const wordsReducer = (state =
                             words: [],
                             loading: false },
                       action) => {
-    console.log("wordsReducer type" + action.type)
+    console.log("wordsReducer type " + action.type)
     switch(action.type) {
         case 'LOADING_ALL_WORDS':
             return {

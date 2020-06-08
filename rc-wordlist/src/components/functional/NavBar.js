@@ -1,13 +1,18 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
-
+import {LinkContainer} from 'react-router-bootstrap'
+import Button from "react-bootstrap/Button";
 const NavBar = () => {
-  const activeStyle = {"backgroundColor": "lightcyan", "fontWeight": "bold"}
+  const activeStyle = {"backgroundColor": "lightblue", "fontWeight": "bold"}
   return (
     <div className="NavBar">
-      <NavLink exact activeStyle={activeStyle} to="/"> Home </NavLink> |
-      <NavLink exact activeStyle={activeStyle} to="/words"> Word List </NavLink> |
-      <NavLink exact activeStyle={activeStyle} to="/words/new"> New Word </NavLink>
+        <LinkContainer exact activeStyle={activeStyle} to="/">
+            <Button variant="primary">Home</Button>
+        </LinkContainer> |  <LinkContainer exact activeStyle={activeStyle} to="/words">
+            <Button variant="primary"> Word List</Button>
+        </LinkContainer> |  <LinkContainer exact activeStyle={activeStyle} to="/words/new">
+            <Button variant="primary">New Word</Button>
+        </LinkContainer>
+
     </div>
   )
 }

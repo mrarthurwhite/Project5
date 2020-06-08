@@ -1,8 +1,12 @@
 import { combineReducers } from 'redux'
 import wordsReducer from "./wordsReducer";
-import wordReducer from "./wordReducer";
+import activeWordReducer from "./activeWordReducer";
+import fetchAWordReducer from "./fetchAWordReducer";
 
 export default combineReducers({
-    wordsReducer,
-    wordReducer
+    wordsReducer
+    ,
+    activeWordReducer
+    ,
+    fetchAWordReducer
 })

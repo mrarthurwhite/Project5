@@ -1,12 +1,12 @@
-const wordReducer = (state =
+const activeWordReducer = (state =
                           {
                               wordId: [],
                               active: false },
-                      action) => {
+                           action) => {
 
     switch(action.type) {
         case 'ACTIVATE_WORD':
-            console.log("wordReducer ACTIVATE_WORD : " + action.word)
+            console.log("activeWordReducer ACTIVATE_WORD : " + action.word)
             return {
                 ...state,
                 wordId: action.word.id,
@@ -17,4 +17,4 @@ const wordReducer = (state =
     }
 }
 
-export default wordReducer;
+export default activeWordReducer;

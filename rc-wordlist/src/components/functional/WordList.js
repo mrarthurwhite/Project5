@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Word from './Word';
+import Word from '../container/Word';
 
 export default class WordList extends Component {
 
