@@ -8,7 +8,7 @@ const fetchAWordReducer  = (state =
         case 'LOADING_A_WORD':
             return {
                 ...state,
-                word: [...state.word],
+                word:state.word,
                 loading: true
             }
         case 'A_WORD':

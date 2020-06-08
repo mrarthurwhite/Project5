@@ -42,7 +42,7 @@ class WordDisplay extends Component {
 
 const mapStateToProps = state => {
     console.log("WordDisplay.js: mapStateToProps state " + state ) ;
-    debugger;
+    //debugger;
     let wrd ="";
     if (state.fetchAWordReducer) {
         wrd = state.fetchAWordReducer.word;

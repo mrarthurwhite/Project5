@@ -9,7 +9,7 @@ export const fetchAWord = (wordId) => {
                     return response.json()})
             .then(responseJSON => {
                 console.log("**** wordFetchAction.js then then responseJSON " + responseJSON ) ;
-                debugger;
+                //debugger;
                 dispatch({ type: 'A_WORD', word: responseJSON })
         })
     }
