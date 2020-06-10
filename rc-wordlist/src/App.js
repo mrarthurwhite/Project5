@@ -11,11 +11,11 @@ import BeginningInstructions from "./components/functional/BeginningInstructions
 
 class App extends Component {
     componentDidMount() {
-        console.log("componentdidMount this.props "+this.props)
+        //console.log("componentdidMount this.props "+this.props)
         this.props.fetchAllWords()
     }
     render() {
-        console.log("render this.props.words "+this.props.words)
+        //console.log("render this.props.words "+this.props.words)
         //debugger;
         return (
             <div className="row" id="overall">
@@ -50,7 +50,7 @@ class App extends Component {
     }
 }
 const mapStateToProps = state => {
-    console.log("App.js mapstatetoprops state.wordsReducer.words" + state.wordsReducer.words)
+    //console.log("App.js mapstatetoprops state.wordsReducer.words" + state.wordsReducer.words)
     //debugger;
     return {
         words: state.wordsReducer.words,
@@ -58,7 +58,7 @@ const mapStateToProps = state => {
     }
 }
 const mapDispatchToProps = dispatch => {
-    console.log("App.js: mapDispatchToProps  " );
+    //console.log("App.js: mapDispatchToProps  " );
     //debugger;
     return {fetchAllWords: () => dispatch(fetchAllWords())}
 }

@@ -1,7 +1,7 @@
 export const addWord = word => ({ type: "ADD_WORD", word })
 
 export const fetchAllWords = () => {
-    console.log("inside fetchAllWords " )
+    //console.log("inside fetchAllWords " );
 
     return (dispatch) => {
         dispatch({ type: 'LOADING_ALL_WORDS'})
@@ -9,7 +9,7 @@ export const fetchAllWords = () => {
             .then(response => {
                 return response.json()})
             .then(responseJSON => {
-                console.log("inside then then fetchAllWords " + responseJSON);
+                //console.log("inside then then fetchAllWords " + responseJSON);
                 dispatch({ type: 'ALL_WORDS', words: responseJSON })
             })
     }

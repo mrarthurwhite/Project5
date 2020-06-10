@@ -6,20 +6,25 @@ import {fetchAWord} from "../../actions/wordFetchAction";
 class WordDisplay extends Component {
 
     componentDidMount() {
+        this.props.fetchAWord(this.props.match.params.wordId)
     }
 
     componentDidUpdate(prevProps) {
-         debugger;
-        let newId= parseInt(prevProps.word.id) !== parseInt(this.props.match.params.wordId);
-        if (newId && !this.props.loading ){
-            console.log(" WordDisplay.js componentDidUpdate : " + this.props.match.params.wordId);
-           this.props.fetchAWord(this.props.match.params.wordId)
+        this.tryToFetchWord(prevProps);
+    }
+
+    tryToFetchWord(prevProps) {
+        let newId = (parseInt(prevProps.match.params.wordId) !== parseInt(this.props.match.params.wordId));
+        if (newId && !this.props.loading) {
+            //debugger;
+            console.log(">>WordDisplay.js.componentDidUpdate wordId: " + this.props.match.params.wordId);
+            this.props.fetchAWord(this.props.match.params.wordId)
         }
     }
 
     findWord= ()=>{
-        let wrd = this.props.words.find(w => w.id == this.props.match.params.wordId);
-        console.log(">>>WordDisplay.js this.props.word " + this.props.word);
+        let wrd = this.props.word;//this.props.words.find(w => w.id == this.props.match.params.wordId);
+        //console.log(">>>WordDisplay.js this.props.word " + this.props.word);
         if (wrd) {
             //console.log(" WordDisplay.js going to display wrd " + (wrd?wrd.word: "undef"));
             this.props.activateWord(wrd);

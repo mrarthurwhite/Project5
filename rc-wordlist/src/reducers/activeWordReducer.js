@@ -6,7 +6,7 @@ const activeWordReducer = (state =
 
     switch(action.type) {
         case 'ACTIVATE_WORD':
-            console.log("activeWordReducer ACTIVATE_WORD : " + action.word)
+            //console.log("activeWordReducer ACTIVATE_WORD : " + action.word)
             return {
                 ...state,
                 wordId: action.word.id,

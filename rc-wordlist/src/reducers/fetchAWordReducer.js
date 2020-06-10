@@ -3,7 +3,7 @@ const fetchAWordReducer  = (state =
                               word: {},
                               loading: false },
                       action) => {
-    console.log("fetchAWordReducer type " + action.type)
+   // console.log("fetchAWordReducer type " + action.type)
     switch(action.type) {
         case 'LOADING_A_WORD':
             return {
