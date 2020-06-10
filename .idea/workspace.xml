@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="029f1705-232c-4fb7-8fae-034bd0cf8926" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-wordlist/db/development.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/api-wordlist/db/development.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-wordlist/log/development.log" beforeDir="false" afterPath="$PROJECT_DIR$/api-wordlist/log/development.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rc-wordlist/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/rc-wordlist/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rc-wordlist/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/rc-wordlist/package-lock.json" afterDir="false" />
@@ -83,7 +85,7 @@
       <workItem from="1591325980249" duration="181000" />
       <workItem from="1591382852261" duration="10559000" />
       <workItem from="1591580946835" duration="8648000" />
-      <workItem from="1591626088445" duration="14795000" />
+      <workItem from="1591626088445" duration="22903000" />
     </task>
     <servers />
   </component>

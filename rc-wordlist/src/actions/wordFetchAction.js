@@ -1,14 +1,14 @@
 export const fetchAWord = (wordId) => {
     let url = "http://localhost:4000/words/" + wordId;
-    console.log("**** wordFetchAction.js inside "  + url ) ;
+   // console.log("**** wordFetchAction.js inside "  + url ) ;
     return (dispatch) => {
         dispatch({ type: 'LOADING_A_WORD'})
         fetch(url)
             .then(response => {
-                console.log("wordFetchAction.js then response.json() " ) ;
+                //console.log("wordFetchAction.js then response.json() " ) ;
                     return response.json()})
             .then(responseJSON => {
-                console.log("**** wordFetchAction.js then then responseJSON " + responseJSON ) ;
+                //console.log("**** wordFetchAction.js then then responseJSON " + responseJSON ) ;
                 //debugger;
                 dispatch({ type: 'A_WORD', word: responseJSON })
         })

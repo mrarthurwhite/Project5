@@ -6,17 +6,22 @@ import {fetchAWord} from "../../actions/wordFetchAction";
 class WordDisplay extends Component {
 
     componentDidMount() {
-        // debugger;
-        console.log(" WordDisplay.js componentDidMount : " +this.props.match.params.wordId);
-        this.props.fetchAWord(this.props.match.params.wordId)
+    }
 
+    componentDidUpdate(prevProps) {
+         debugger;
+        let newId= parseInt(prevProps.word.id) !== parseInt(this.props.match.params.wordId);
+        if (newId && !this.props.loading ){
+            console.log(" WordDisplay.js componentDidUpdate : " + this.props.match.params.wordId);
+           this.props.fetchAWord(this.props.match.params.wordId)
+        }
     }
 
     findWord= ()=>{
         let wrd = this.props.words.find(w => w.id == this.props.match.params.wordId);
-        console.log("WordDisplay.js this.props.word " + this.props.word);
+        console.log(">>>WordDisplay.js this.props.word " + this.props.word);
         if (wrd) {
-            console.log(" WordDisplay.js going to display wrd " + (wrd?wrd.word: "undef"));
+            //console.log(" WordDisplay.js going to display wrd " + (wrd?wrd.word: "undef"));
             this.props.activateWord(wrd);
         }
         return (
@@ -41,21 +46,22 @@ class WordDisplay extends Component {
 }
 
 const mapStateToProps = state => {
-    console.log("WordDisplay.js: mapStateToProps state " + state ) ;
+   // console.log("WordDisplay.js: mapStateToProps state " + state ) ;
     //debugger;
     let wrd ="";
     if (state.fetchAWordReducer) {
         wrd = state.fetchAWordReducer.word;
-        console.log("WordDisplay.js: mapStateToProps wrd " + wrd ) ;
+        //console.log("WordDisplay.js: mapStateToProps wrd " + wrd ) ;
     }
 
     return {
-        word: wrd
+        word: wrd,
+        loading: state.fetchAWordReducer.loading
     }
 }
 
 const mapDispatchToProps = dispatch => {
-    console.log("wordDisplay.js: mapDispatchToProps  " );
+    //console.log("wordDisplay.js: mapDispatchToProps  " );
     //debugger;
     return {
         fetchAWord: (wordId) => dispatch(fetchAWord(wordId)),

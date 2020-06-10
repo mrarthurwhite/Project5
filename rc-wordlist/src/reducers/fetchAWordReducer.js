@@ -1,6 +1,6 @@
 const fetchAWordReducer  = (state =
                           {
-                              word: [],
+                              word: {},
                               loading: false },
                       action) => {
     console.log("fetchAWordReducer type " + action.type)
