@@ -42,6 +42,7 @@
         1. clone the repository down to your machine using 'git clone'
         2. go inside the folder titled api-wordlist
         3. once inside the rails / server side start the rails server by typing "rails s"
-        4. after the server starts in step 3 open the html file called index.html
-        5. you should be able to run the application now
-            5.1 you should be able to see the json from the server by going to the url http://localhost:3000/words
+        4. after the server starts in step 3 go to the folder with the client code "rc-wordlist" (react client wordlist)
+        5. type "npm start" to start the react server.
+        6. you should be able to run the application now
+            6.1 you should be able to see the json from the server by going to the url http://localhost:3000/words

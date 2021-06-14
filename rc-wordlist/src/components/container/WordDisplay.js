@@ -6,7 +6,7 @@ import {fetchAWord} from "../../actions/wordFetchAction";
 class WordDisplay extends Component {
 
     componentDidMount() {
-        this.props.fetchAWord(this.props.match.params.wordId)
+        this.props.pfetchAWord(this.props.match.params.wordId)
     }
 
     componentDidUpdate(prevProps) {
@@ -15,26 +15,26 @@ class WordDisplay extends Component {
 
     tryToFetchWord(prevProps) {
         let newId = (parseInt(prevProps.match.params.wordId) !== parseInt(this.props.match.params.wordId));
-        if (newId && !this.props.loading) {
+        if (newId && !this.props.ploading) {
             //debugger;
             console.log(">>WordDisplay.js.componentDidUpdate wordId: " + this.props.match.params.wordId);
-            this.props.fetchAWord(this.props.match.params.wordId)
+            this.props.pfetchAWord(this.props.match.params.wordId)
         }
     }
 
     findWord= ()=>{
-        let wrd = this.props.word;//this.props.words.find(w => w.id == this.props.match.params.wordId);
-        //console.log(">>>WordDisplay.js this.props.word " + this.props.word);
-        if (wrd) {
-            //console.log(" WordDisplay.js going to display wrd " + (wrd?wrd.word: "undef"));
-            this.props.activateWord(wrd);
+        let pwrd = this.props.pword;//this.props.words.find(w => w.id == this.props.match.params.wordId);
+        //console.log(">>>WordDisplay.js this.props.pword " + this.props.pword);
+        if (pwrd) {
+            //console.log(" WordDisplay.js going to display pwrd " + (pwrd?pwrd.pwrd: "undef"));
+            this.props.pactivateWord(pwrd);
         }
         return (
-            wrd? <div className="word">
+            pwrd? <div className="word">
                 <p className="text-danger">Word definition</p>
-                <p><i>{wrd.word}</i></p>
-                <p><b>Definition:</b> {wrd.definition}</p>
-                <p><b>Sentence:</b> {wrd.sentence}</p>
+                <p><i>{pwrd.word}</i></p>
+                <p><b>Definition:</b> {pwrd.definition}</p>
+                <p><b>Sentence:</b> {pwrd.sentence}</p>
             </div> : <h3>...</h3>
         );
     }
@@ -53,15 +53,15 @@ class WordDisplay extends Component {
 const mapStateToProps = state => {
    // console.log("WordDisplay.js: mapStateToProps state " + state ) ;
     //debugger;
-    let wrd ="";
+    let pwrd ="";
     if (state.fetchAWordReducer) {
-        wrd = state.fetchAWordReducer.word;
-        //console.log("WordDisplay.js: mapStateToProps wrd " + wrd ) ;
+        pwrd = state.fetchAWordReducer.word;
+        //console.log("WordDisplay.js: mapStateToProps pwrd " + pwrd ) ;
     }
 
     return {
-        word: wrd,
-        loading: state.fetchAWordReducer.loading
+        pword: pwrd,
+        ploading: state.fetchAWordReducer.loading
     }
 }
 
@@ -69,8 +69,8 @@ const mapDispatchToProps = dispatch => {
     //console.log("wordDisplay.js: mapDispatchToProps  " );
     //debugger;
     return {
-        fetchAWord: (wordId) => dispatch(fetchAWord(wordId)),
-        activateWord: (w) => dispatch(activateWord(w))
+        pfetchAWord: (wordId) => dispatch(fetchAWord(wordId)),
+        pactivateWord: (w) => dispatch(activateWord(w))
     }
 }
 

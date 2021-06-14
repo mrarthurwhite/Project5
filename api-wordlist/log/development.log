@@ -44209,3 +44209,1337 @@ Processing by WordsController#show as */*
 Completed 200 OK in 12ms (Views: 0.1ms | ActiveRecord: 0.9ms | Allocations: 2039)
 
 
+Started GET "/words" for ::1 at 2020-12-23 16:08:16 -0500
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WordsController#index as */*
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+Completed 200 OK in 84ms (Views: 0.1ms | ActiveRecord: 3.5ms | Allocations: 22690)
+
+
+Started GET "/words/2" for ::1 at 2020-12-23 16:08:24 -0500
+Processing by WordsController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mWord Load (1.5ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:45:in `set_word'
+  [1m[36mCACHE Word Load (0.1ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:13:in `show'
+  [1m[36mCategory Load (1.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+Completed 200 OK in 39ms (Views: 0.3ms | ActiveRecord: 2.6ms | Allocations: 2298)
+
+
+Started GET "/words/6" for ::1 at 2020-12-23 16:08:28 -0500
+Processing by WordsController#show as */*
+  Parameters: {"id"=>"6"}
+  [1m[36mWord Load (0.8ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:45:in `set_word'
+  [1m[36mCACHE Word Load (0.0ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:13:in `show'
+  [1m[36mCategory Load (1.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+Completed 200 OK in 55ms (Views: 0.2ms | ActiveRecord: 2.2ms | Allocations: 2066)
+
+
+Started GET "/words/10" for ::1 at 2020-12-23 16:08:34 -0500
+Processing by WordsController#show as */*
+  Parameters: {"id"=>"10"}
+  [1m[36mWord Load (1.4ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:45:in `set_word'
+  [1m[36mCACHE Word Load (0.1ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:13:in `show'
+  [1m[36mCategory Load (1.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+Completed 200 OK in 23ms (Views: 0.1ms | ActiveRecord: 3.0ms | Allocations: 2056)
+
+
+Started GET "/words/11" for ::1 at 2020-12-23 16:08:37 -0500
+Processing by WordsController#show as */*
+  Parameters: {"id"=>"11"}
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:45:in `set_word'
+  [1m[36mCACHE Word Load (0.0ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:13:in `show'
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+Completed 200 OK in 13ms (Views: 0.1ms | ActiveRecord: 0.9ms | Allocations: 2043)
+
+
+Started GET "/words/5" for ::1 at 2020-12-23 16:10:12 -0500
+Processing by WordsController#show as */*
+  Parameters: {"id"=>"5"}
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:45:in `set_word'
+  [1m[36mCACHE Word Load (0.0ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:13:in `show'
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+Completed 200 OK in 14ms (Views: 0.1ms | ActiveRecord: 0.8ms | Allocations: 2060)
+
+
+Started GET "/words/4" for ::1 at 2020-12-23 16:10:15 -0500
+Processing by WordsController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mWord Load (1.3ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:45:in `set_word'
+  [1m[36mCACHE Word Load (0.1ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:13:in `show'
+  [1m[36mCategory Load (1.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+Completed 200 OK in 48ms (Views: 1.1ms | ActiveRecord: 2.7ms | Allocations: 2041)
+
+
+Started GET "/words/3" for ::1 at 2020-12-23 16:10:16 -0500
+Processing by WordsController#show as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:45:in `set_word'
+  [1m[36mCACHE Word Load (0.0ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:13:in `show'
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+Completed 200 OK in 14ms (Views: 0.3ms | ActiveRecord: 0.8ms | Allocations: 2043)
+
+
+Started GET "/words" for 127.0.0.1 at 2021-06-06 13:21:04 -0400
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WordsController#index as HTML
+  [1m[36mWord Load (0.7ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+Completed 200 OK in 95ms (Views: 0.1ms | ActiveRecord: 6.1ms | Allocations: 22688)
+
+
+Started GET "/words" for ::1 at 2021-06-06 13:24:28 -0400
+Processing by WordsController#index as */*
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCategory Load (1.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+Completed 200 OK in 178ms (Views: 4.2ms | ActiveRecord: 3.0ms | Allocations: 11295)
+
+
+Started GET "/words/2" for ::1 at 2021-06-06 13:24:43 -0400
+Processing by WordsController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mWord Load (0.6ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:45:in `set_word'
+  [1m[36mCACHE Word Load (0.0ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:13:in `show'
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+Completed 200 OK in 16ms (Views: 0.1ms | ActiveRecord: 1.2ms | Allocations: 2298)
+
+
+Started GET "/words/7" for ::1 at 2021-06-06 13:24:45 -0400
+Processing by WordsController#show as */*
+  Parameters: {"id"=>"7"}
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:45:in `set_word'
+  [1m[36mCACHE Word Load (0.0ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:13:in `show'
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+Completed 200 OK in 11ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 2060)
+
+
+Started GET "/words/5" for ::1 at 2021-06-06 13:24:46 -0400
+Processing by WordsController#show as */*
+  Parameters: {"id"=>"5"}
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:45:in `set_word'
+  [1m[36mCACHE Word Load (0.0ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:13:in `show'
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+Completed 200 OK in 11ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 2060)
+
+
+Started GET "/words" for ::1 at 2021-06-06 13:26:28 -0400
+Processing by WordsController#index as */*
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+Completed 200 OK in 109ms (Views: 0.2ms | ActiveRecord: 2.8ms | Allocations: 11272)
+
+
+Started GET "/words/6" for ::1 at 2021-06-06 19:18:25 -0400
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by WordsController#show as */*
+  Parameters: {"id"=>"6"}
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:45:in `set_word'
+  [1m[36mCACHE Word Load (0.0ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:13:in `show'
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+Completed 200 OK in 35ms (Views: 0.1ms | ActiveRecord: 1.1ms | Allocations: 10697)
+
+
+Started GET "/words/10" for ::1 at 2021-06-06 19:20:10 -0400
+Processing by WordsController#show as */*
+  Parameters: {"id"=>"10"}
+  [1m[36mWord Load (0.7ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:45:in `set_word'
+  [1m[36mCACHE Word Load (0.0ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:13:in `show'
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+Completed 200 OK in 16ms (Views: 0.1ms | ActiveRecord: 1.2ms | Allocations: 2039)
+
+
+Started GET "/words/1" for ::1 at 2021-06-06 19:20:19 -0400
+Processing by WordsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:45:in `set_word'
+  [1m[36mCACHE Word Load (0.0ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:13:in `show'
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+Completed 200 OK in 17ms (Views: 0.3ms | ActiveRecord: 1.0ms | Allocations: 2041)
+
+
+Started GET "/words/4" for ::1 at 2021-06-06 19:48:01 -0400
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by WordsController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:45:in `set_word'
+  [1m[36mCACHE Word Load (0.0ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:13:in `show'
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+Completed 200 OK in 10ms (Views: 0.1ms | ActiveRecord: 1.1ms | Allocations: 2074)
+
+
+Started GET "/words" for ::1 at 2021-06-14 16:02:19 -0400
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WordsController#index as */*
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+Completed 200 OK in 172ms (Views: 0.2ms | ActiveRecord: 6.9ms | Allocations: 22690)
+
+
+Started GET "/words/new" for ::1 at 2021-06-14 16:02:30 -0400
+Processing by WordsController#show as */*
+  Parameters: {"id"=>"new"}
+  [1m[36mWord Load (1.4ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:45:in `set_word'
+Completed 404 Not Found in 41ms (ActiveRecord: 1.4ms | Allocations: 756)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Word with 'id'=new):
+  
+app/controllers/words_controller.rb:45:in `set_word'
+Started GET "/words/new" for ::1 at 2021-06-14 16:02:31 -0400
+Processing by WordsController#show as */*
+  Parameters: {"id"=>"new"}
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:45:in `set_word'
+Completed 404 Not Found in 4ms (ActiveRecord: 0.4ms | Allocations: 606)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Word with 'id'=new):
+  
+app/controllers/words_controller.rb:45:in `set_word'
+Started GET "/words/new" for ::1 at 2021-06-14 16:02:31 -0400
+Processing by WordsController#show as */*
+  Parameters: {"id"=>"new"}
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:45:in `set_word'
+Completed 404 Not Found in 4ms (ActiveRecord: 0.4ms | Allocations: 606)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Word with 'id'=new):
+  
+app/controllers/words_controller.rb:45:in `set_word'
+Started GET "/words/new" for ::1 at 2021-06-14 16:02:31 -0400
+Processing by WordsController#show as */*
+  Parameters: {"id"=>"new"}
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:45:in `set_word'
+Completed 404 Not Found in 5ms (ActiveRecord: 0.5ms | Allocations: 606)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Word with 'id'=new):
+  
+app/controllers/words_controller.rb:45:in `set_word'
+Started GET "/words/new" for ::1 at 2021-06-14 16:02:31 -0400
+Processing by WordsController#show as */*
+  Parameters: {"id"=>"new"}
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:45:in `set_word'
+Completed 404 Not Found in 3ms (ActiveRecord: 0.3ms | Allocations: 606)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Word with 'id'=new):
+  
+app/controllers/words_controller.rb:45:in `set_word'
+Started GET "/words/new" for ::1 at 2021-06-14 16:02:31 -0400
+Processing by WordsController#show as */*
+  Parameters: {"id"=>"new"}
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:45:in `set_word'
+Completed 404 Not Found in 4ms (ActiveRecord: 0.4ms | Allocations: 606)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Word with 'id'=new):
+  
+app/controllers/words_controller.rb:45:in `set_word'
+Started GET "/words/new" for ::1 at 2021-06-14 16:02:31 -0400
+Processing by WordsController#show as */*
+  Parameters: {"id"=>"new"}
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:45:in `set_word'
+Completed 404 Not Found in 3ms (ActiveRecord: 0.3ms | Allocations: 606)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Word with 'id'=new):
+  
+app/controllers/words_controller.rb:45:in `set_word'
+Started GET "/words/new" for ::1 at 2021-06-14 16:02:31 -0400
+Processing by WordsController#show as */*
+  Parameters: {"id"=>"new"}
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:45:in `set_word'
+Completed 404 Not Found in 4ms (ActiveRecord: 0.3ms | Allocations: 606)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Word with 'id'=new):
+  
+app/controllers/words_controller.rb:45:in `set_word'
+Started GET "/words/new" for ::1 at 2021-06-14 16:02:31 -0400
+Processing by WordsController#show as */*
+  Parameters: {"id"=>"new"}
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:45:in `set_word'
+Completed 404 Not Found in 3ms (ActiveRecord: 0.4ms | Allocations: 606)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Word with 'id'=new):
+  
+app/controllers/words_controller.rb:45:in `set_word'
+Started GET "/words/new" for ::1 at 2021-06-14 16:02:31 -0400
+Processing by WordsController#show as */*
+  Parameters: {"id"=>"new"}
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:45:in `set_word'
+Completed 404 Not Found in 5ms (ActiveRecord: 0.3ms | Allocations: 606)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Word with 'id'=new):
+  
+app/controllers/words_controller.rb:45:in `set_word'
+Started GET "/words/new" for ::1 at 2021-06-14 16:02:31 -0400
+Processing by WordsController#show as */*
+  Parameters: {"id"=>"new"}
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:45:in `set_word'
+Completed 404 Not Found in 4ms (ActiveRecord: 0.4ms | Allocations: 619)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Word with 'id'=new):
+  
+app/controllers/words_controller.rb:45:in `set_word'
+Started GET "/words/new" for ::1 at 2021-06-14 16:02:31 -0400
+Processing by WordsController#show as */*
+  Parameters: {"id"=>"new"}
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:45:in `set_word'
+Completed 404 Not Found in 12ms (ActiveRecord: 0.4ms | Allocations: 608)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Word with 'id'=new):
+  
+app/controllers/words_controller.rb:45:in `set_word'
+Started GET "/words/new" for ::1 at 2021-06-14 16:02:31 -0400
+Processing by WordsController#show as */*
+  Parameters: {"id"=>"new"}
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:45:in `set_word'
+Completed 404 Not Found in 4ms (ActiveRecord: 0.3ms | Allocations: 606)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Word with 'id'=new):
+  
+app/controllers/words_controller.rb:45:in `set_word'
+Started GET "/words/new" for ::1 at 2021-06-14 16:02:31 -0400
+Processing by WordsController#show as */*
+  Parameters: {"id"=>"new"}
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:45:in `set_word'
+Completed 404 Not Found in 7ms (ActiveRecord: 0.5ms | Allocations: 606)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Word with 'id'=new):
+  
+app/controllers/words_controller.rb:45:in `set_word'
+Started GET "/words/new" for ::1 at 2021-06-14 16:02:32 -0400
+Processing by WordsController#show as */*
+  Parameters: {"id"=>"new"}
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:45:in `set_word'
+Completed 404 Not Found in 3ms (ActiveRecord: 0.3ms | Allocations: 606)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Word with 'id'=new):
+  
+app/controllers/words_controller.rb:45:in `set_word'
+Started GET "/words/new" for ::1 at 2021-06-14 16:02:32 -0400
+Processing by WordsController#show as */*
+  Parameters: {"id"=>"new"}
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:45:in `set_word'
+Completed 404 Not Found in 6ms (ActiveRecord: 0.4ms | Allocations: 606)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Word with 'id'=new):
+  
+app/controllers/words_controller.rb:45:in `set_word'
+Started GET "/words/new" for ::1 at 2021-06-14 16:02:32 -0400
+Processing by WordsController#show as */*
+  Parameters: {"id"=>"new"}
+  [1m[36mWord Load (2.3ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:45:in `set_word'
+Completed 404 Not Found in 6ms (ActiveRecord: 2.3ms | Allocations: 606)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Word with 'id'=new):
+  
+app/controllers/words_controller.rb:45:in `set_word'
+Started GET "/words/new" for ::1 at 2021-06-14 16:02:32 -0400
+Processing by WordsController#show as */*
+  Parameters: {"id"=>"new"}
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:45:in `set_word'
+Completed 404 Not Found in 3ms (ActiveRecord: 0.3ms | Allocations: 606)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Word with 'id'=new):
+  
+app/controllers/words_controller.rb:45:in `set_word'
+Started GET "/words/new" for ::1 at 2021-06-14 16:02:32 -0400
+Processing by WordsController#show as */*
+  Parameters: {"id"=>"new"}
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:45:in `set_word'
+Completed 404 Not Found in 3ms (ActiveRecord: 0.4ms | Allocations: 606)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Word with 'id'=new):
+  
+app/controllers/words_controller.rb:45:in `set_word'
+Started GET "/words/new" for ::1 at 2021-06-14 16:02:32 -0400
+Processing by WordsController#show as */*
+  Parameters: {"id"=>"new"}
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:45:in `set_word'
+Completed 404 Not Found in 11ms (ActiveRecord: 0.4ms | Allocations: 606)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Word with 'id'=new):
+  
+app/controllers/words_controller.rb:45:in `set_word'
+Started GET "/words/new" for ::1 at 2021-06-14 16:02:32 -0400
+Processing by WordsController#show as */*
+  Parameters: {"id"=>"new"}
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:45:in `set_word'
+Completed 404 Not Found in 4ms (ActiveRecord: 0.4ms | Allocations: 619)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Word with 'id'=new):
+  
+app/controllers/words_controller.rb:45:in `set_word'
+Started GET "/words/new" for ::1 at 2021-06-14 16:02:32 -0400
+Processing by WordsController#show as */*
+  Parameters: {"id"=>"new"}
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:45:in `set_word'
+Completed 404 Not Found in 3ms (ActiveRecord: 0.3ms | Allocations: 606)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Word with 'id'=new):
+  
+app/controllers/words_controller.rb:45:in `set_word'
+Started GET "/words/new" for ::1 at 2021-06-14 16:02:32 -0400
+Processing by WordsController#show as */*
+  Parameters: {"id"=>"new"}
+  [1m[36mWord Load (1.8ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:45:in `set_word'
+Completed 404 Not Found in 4ms (ActiveRecord: 1.8ms | Allocations: 606)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Word with 'id'=new):
+  
+app/controllers/words_controller.rb:45:in `set_word'
+Started GET "/words/new" for ::1 at 2021-06-14 16:02:32 -0400
+Processing by WordsController#show as */*
+  Parameters: {"id"=>"new"}
+  [1m[36mWord Load (1.3ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:45:in `set_word'
+Completed 404 Not Found in 5ms (ActiveRecord: 1.3ms | Allocations: 606)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Word with 'id'=new):
+  
+app/controllers/words_controller.rb:45:in `set_word'
+Started GET "/words/new" for ::1 at 2021-06-14 16:02:32 -0400
+Processing by WordsController#show as */*
+  Parameters: {"id"=>"new"}
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:45:in `set_word'
+Completed 404 Not Found in 3ms (ActiveRecord: 0.4ms | Allocations: 606)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Word with 'id'=new):
+  
+app/controllers/words_controller.rb:45:in `set_word'
+Started GET "/words/new" for ::1 at 2021-06-14 16:02:32 -0400
+Processing by WordsController#show as */*
+  Parameters: {"id"=>"new"}
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:45:in `set_word'
+Completed 404 Not Found in 3ms (ActiveRecord: 0.4ms | Allocations: 606)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Word with 'id'=new):
+  
+app/controllers/words_controller.rb:45:in `set_word'
+Started GET "/words/new" for ::1 at 2021-06-14 16:02:32 -0400
+Processing by WordsController#show as */*
+  Parameters: {"id"=>"new"}
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:45:in `set_word'
+Completed 404 Not Found in 3ms (ActiveRecord: 0.3ms | Allocations: 606)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Word with 'id'=new):
+  
+app/controllers/words_controller.rb:45:in `set_word'
+Started GET "/words/new" for ::1 at 2021-06-14 16:02:32 -0400
+Processing by WordsController#show as */*
+  Parameters: {"id"=>"new"}
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:45:in `set_word'
+Completed 404 Not Found in 3ms (ActiveRecord: 0.4ms | Allocations: 606)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Word with 'id'=new):
+  
+app/controllers/words_controller.rb:45:in `set_word'
+Started GET "/words" for ::1 at 2021-06-14 16:04:34 -0400
+Processing by WordsController#index as */*
+  [1m[36mWord Load (1.9ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCategory Load (1.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCategory Load (0.7ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+Completed 200 OK in 319ms (Views: 0.1ms | ActiveRecord: 5.0ms | Allocations: 11291)
+
+
+Started GET "/words" for ::1 at 2021-06-14 16:04:56 -0400
+Processing by WordsController#index as */*
+  [1m[36mWord Load (3.1ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCategory Load (0.9ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCategory Load (0.9ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+Completed 200 OK in 182ms (Views: 0.2ms | ActiveRecord: 5.7ms | Allocations: 11272)
+
+
+Started GET "/words" for ::1 at 2021-06-14 16:11:40 -0400
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by WordsController#index as */*
+  [1m[36mWord Load (0.8ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCategory Load (1.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCategory Load (4.9ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+Completed 200 OK in 116ms (Views: 0.2ms | ActiveRecord: 7.8ms | Allocations: 11311)
+
+
+Started GET "/words/1" for ::1 at 2021-06-14 16:11:54 -0400
+Processing by WordsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mWord Load (1.6ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:45:in `set_word'
+  [1m[36mCACHE Word Load (0.0ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:13:in `show'
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+Completed 200 OK in 26ms (Views: 0.1ms | ActiveRecord: 2.2ms | Allocations: 2175)
+
+
+Started GET "/words/2" for ::1 at 2021-06-14 16:11:55 -0400
+Processing by WordsController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mWord Load (1.4ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:45:in `set_word'
+  [1m[36mCACHE Word Load (0.0ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:13:in `show'
+  [1m[36mCategory Load (0.7ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+Completed 200 OK in 20ms (Views: 0.2ms | ActiveRecord: 2.2ms | Allocations: 2045)
+
+
+Started GET "/words/3" for ::1 at 2021-06-14 16:11:57 -0400
+Processing by WordsController#show as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:45:in `set_word'
+  [1m[36mCACHE Word Load (0.0ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:13:in `show'
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+Completed 200 OK in 14ms (Views: 0.1ms | ActiveRecord: 1.0ms | Allocations: 2043)
+
+
+Started GET "/words/3" for ::1 at 2021-06-14 16:17:41 -0400
+Started GET "/words" for ::1 at 2021-06-14 16:17:42 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by WordsController#show as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:45:in `set_word'
+  [1m[36mCACHE Word Load (0.0ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:13:in `show'
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+Completed 200 OK in 47ms (Views: 0.3ms | ActiveRecord: 1.0ms | Allocations: 10704)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by WordsController#index as */*
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+Completed 200 OK in 85ms (Views: 0.2ms | ActiveRecord: 6.4ms | Allocations: 20320)
+
+
+Started GET "/words/3" for ::1 at 2021-06-14 16:17:59 -0400
+Processing by WordsController#show as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mWord Load (0.6ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:45:in `set_word'
+  [1m[36mCACHE Word Load (0.0ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:13:in `show'
+Started GET "/words" for ::1 at 2021-06-14 16:17:59 -0400
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+Completed 200 OK in 18ms (Views: 0.4ms | ActiveRecord: 1.1ms | Allocations: 3486)
+
+
+Processing by WordsController#index as */*
+  [1m[36mWord Load (0.8ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCategory Load (0.8ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+Completed 200 OK in 62ms (Views: 0.2ms | ActiveRecord: 2.7ms | Allocations: 11307)
+
+
+Started GET "/words/2" for ::1 at 2021-06-14 16:18:13 -0400
+Processing by WordsController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mWord Load (0.7ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:45:in `set_word'
+  [1m[36mCACHE Word Load (0.0ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:13:in `show'
+  [1m[36mCategory Load (1.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+Completed 200 OK in 14ms (Views: 0.1ms | ActiveRecord: 2.3ms | Allocations: 2060)
+
+
+Started GET "/words/3" for ::1 at 2021-06-14 16:18:14 -0400
+Processing by WordsController#show as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:45:in `set_word'
+  [1m[36mCACHE Word Load (0.0ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:13:in `show'
+  [1m[36mCategory Load (1.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+Completed 200 OK in 17ms (Views: 0.2ms | ActiveRecord: 1.6ms | Allocations: 2043)
+
+
+Started GET "/words/3" for ::1 at 2021-06-14 16:18:28 -0400
+Processing by WordsController#show as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:45:in `set_word'
+  [1m[36mCACHE Word Load (0.0ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:13:in `show'
+  [1m[36mCategory Load (0.8ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+Completed 200 OK in 14ms (Views: 0.1ms | ActiveRecord: 1.3ms | Allocations: 2043)
+
+
+Started GET "/words" for ::1 at 2021-06-14 16:18:28 -0400
+Processing by WordsController#index as */*
+  [1m[36mWord Load (2.7ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCategory Load (0.9ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+Completed 200 OK in 92ms (Views: 0.2ms | ActiveRecord: 4.9ms | Allocations: 11272)
+
+
+Started GET "/words/4" for ::1 at 2021-06-14 16:24:35 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by WordsController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mWord Load (1.2ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:45:in `set_word'
+  [1m[36mCACHE Word Load (0.0ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:13:in `show'
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+Completed 200 OK in 14ms (Views: 0.2ms | ActiveRecord: 1.7ms | Allocations: 2074)
+
+
+Started GET "/words/1" for ::1 at 2021-06-14 16:24:37 -0400
+Processing by WordsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:45:in `set_word'
+  [1m[36mCACHE Word Load (0.0ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:13:in `show'
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+Completed 200 OK in 17ms (Views: 0.2ms | ActiveRecord: 1.2ms | Allocations: 2041)
+
+
+Started GET "/words/2" for ::1 at 2021-06-14 16:24:40 -0400
+Processing by WordsController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:45:in `set_word'
+  [1m[36mCACHE Word Load (0.0ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:13:in `show'
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+Completed 200 OK in 12ms (Views: 0.1ms | ActiveRecord: 1.0ms | Allocations: 2041)
+
+
+Started GET "/words/5" for ::1 at 2021-06-14 16:24:40 -0400
+Processing by WordsController#show as */*
+  Parameters: {"id"=>"5"}
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:45:in `set_word'
+  [1m[36mCACHE Word Load (0.0ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:13:in `show'
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+Completed 200 OK in 16ms (Views: 0.1ms | ActiveRecord: 1.1ms | Allocations: 2043)
+
+
+Started GET "/words/5" for ::1 at 2021-06-14 16:25:22 -0400
+Processing by WordsController#show as */*
+  Parameters: {"id"=>"5"}
+  [1m[36mWord Load (3.8ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:45:in `set_word'
+  [1m[36mCACHE Word Load (0.1ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:13:in `show'
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+Completed 200 OK in 100ms (Views: 0.9ms | ActiveRecord: 4.6ms | Allocations: 2226)
+
+
+Started GET "/words" for ::1 at 2021-06-14 16:25:22 -0400
+Processing by WordsController#index as */*
+  [1m[36mWord Load (7.7ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCategory Load (0.8ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCategory Load (0.7ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+Completed 200 OK in 199ms (Views: 0.2ms | ActiveRecord: 10.0ms | Allocations: 11306)
+
+
+Started GET "/words/new" for ::1 at 2021-06-14 16:25:24 -0400
+Processing by WordsController#show as */*
+  Parameters: {"id"=>"new"}
+  [1m[36mWord Load (0.6ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:45:in `set_word'
+Completed 404 Not Found in 20ms (ActiveRecord: 0.6ms | Allocations: 607)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Word with 'id'=new):
+  
+app/controllers/words_controller.rb:45:in `set_word'
+Started GET "/words/new" for ::1 at 2021-06-14 16:25:24 -0400
+Processing by WordsController#show as */*
+  Parameters: {"id"=>"new"}
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:45:in `set_word'
+Completed 404 Not Found in 4ms (ActiveRecord: 0.5ms | Allocations: 606)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Word with 'id'=new):
+  
+app/controllers/words_controller.rb:45:in `set_word'
+Started GET "/words/new" for ::1 at 2021-06-14 16:25:24 -0400
+Processing by WordsController#show as */*
+  Parameters: {"id"=>"new"}
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:45:in `set_word'
+Completed 404 Not Found in 3ms (ActiveRecord: 0.5ms | Allocations: 606)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Word with 'id'=new):
+  
+app/controllers/words_controller.rb:45:in `set_word'
+Started GET "/words/new" for ::1 at 2021-06-14 16:25:24 -0400
+Processing by WordsController#show as */*
+  Parameters: {"id"=>"new"}
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:45:in `set_word'
+Completed 404 Not Found in 5ms (ActiveRecord: 0.4ms | Allocations: 606)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Word with 'id'=new):
+  
+app/controllers/words_controller.rb:45:in `set_word'
+Started GET "/words/new" for ::1 at 2021-06-14 16:25:24 -0400
+Processing by WordsController#show as */*
+  Parameters: {"id"=>"new"}
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:45:in `set_word'
+Completed 404 Not Found in 4ms (ActiveRecord: 0.5ms | Allocations: 606)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Word with 'id'=new):
+  
+app/controllers/words_controller.rb:45:in `set_word'
+Started GET "/words/new" for ::1 at 2021-06-14 16:25:24 -0400
+Processing by WordsController#show as */*
+  Parameters: {"id"=>"new"}
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:45:in `set_word'
+Completed 404 Not Found in 3ms (ActiveRecord: 0.3ms | Allocations: 606)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Word with 'id'=new):
+  
+app/controllers/words_controller.rb:45:in `set_word'
+Started GET "/words/new" for ::1 at 2021-06-14 16:25:24 -0400
+Processing by WordsController#show as */*
+  Parameters: {"id"=>"new"}
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:45:in `set_word'
+Completed 404 Not Found in 4ms (ActiveRecord: 0.3ms | Allocations: 606)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Word with 'id'=new):
+  
+app/controllers/words_controller.rb:45:in `set_word'
+Started GET "/words/new" for ::1 at 2021-06-14 16:25:24 -0400
+Processing by WordsController#show as */*
+  Parameters: {"id"=>"new"}
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:45:in `set_word'
+Completed 404 Not Found in 10ms (ActiveRecord: 0.3ms | Allocations: 609)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Word with 'id'=new):
+  
+app/controllers/words_controller.rb:45:in `set_word'
+Started GET "/words/new" for ::1 at 2021-06-14 16:25:24 -0400
+Processing by WordsController#show as */*
+  Parameters: {"id"=>"new"}
+  [1m[36mWord Load (0.8ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:45:in `set_word'
+Completed 404 Not Found in 6ms (ActiveRecord: 0.8ms | Allocations: 606)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Word with 'id'=new):
+  
+app/controllers/words_controller.rb:45:in `set_word'
+Started GET "/words/new" for ::1 at 2021-06-14 16:25:24 -0400
+Processing by WordsController#show as */*
+  Parameters: {"id"=>"new"}
+  [1m[36mWord Load (0.9ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:45:in `set_word'
+Completed 404 Not Found in 4ms (ActiveRecord: 0.9ms | Allocations: 606)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Word with 'id'=new):
+  
+app/controllers/words_controller.rb:45:in `set_word'
+Started GET "/words/new" for ::1 at 2021-06-14 16:25:25 -0400
+Processing by WordsController#show as */*
+  Parameters: {"id"=>"new"}
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:45:in `set_word'
+Completed 404 Not Found in 3ms (ActiveRecord: 0.4ms | Allocations: 606)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Word with 'id'=new):
+  
+app/controllers/words_controller.rb:45:in `set_word'
+Started GET "/words/new" for ::1 at 2021-06-14 16:25:25 -0400
+Processing by WordsController#show as */*
+  Parameters: {"id"=>"new"}
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:45:in `set_word'
+Completed 404 Not Found in 3ms (ActiveRecord: 0.5ms | Allocations: 606)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Word with 'id'=new):
+  
+app/controllers/words_controller.rb:45:in `set_word'
+Started GET "/words/new" for ::1 at 2021-06-14 16:25:25 -0400
+Processing by WordsController#show as */*
+  Parameters: {"id"=>"new"}
+  [1m[36mWord Load (1.6ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:45:in `set_word'
+Completed 404 Not Found in 4ms (ActiveRecord: 1.6ms | Allocations: 606)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Word with 'id'=new):
+  
+app/controllers/words_controller.rb:45:in `set_word'
+Started GET "/words/2" for ::1 at 2021-06-14 16:25:26 -0400
+Processing by WordsController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mWord Load (0.9ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:45:in `set_word'
+  [1m[36mCACHE Word Load (0.0ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:13:in `show'
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+Completed 200 OK in 17ms (Views: 0.1ms | ActiveRecord: 1.4ms | Allocations: 2040)
+
+
+Started GET "/words/3" for ::1 at 2021-06-14 16:25:29 -0400
+Processing by WordsController#show as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:45:in `set_word'
+  [1m[36mCACHE Word Load (0.0ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:13:in `show'
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+Completed 200 OK in 11ms (Views: 0.1ms | ActiveRecord: 1.0ms | Allocations: 2043)
+
+
+Started GET "/words/3" for ::1 at 2021-06-14 16:26:59 -0400
+Processing by WordsController#show as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:45:in `set_word'
+  [1m[36mCACHE Word Load (0.1ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:13:in `show'
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+Completed 200 OK in 194ms (Views: 0.1ms | ActiveRecord: 1.2ms | Allocations: 2043)
+
+
+Started GET "/words" for ::1 at 2021-06-14 16:26:59 -0400
+Processing by WordsController#index as */*
+  [1m[36mWord Load (2.8ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCategory Load (0.7ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCategory Load (0.7ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCategory Load (3.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+Completed 200 OK in 446ms (Views: 0.2ms | ActiveRecord: 8.3ms | Allocations: 11281)
+
+
+Started GET "/words/1" for ::1 at 2021-06-14 16:27:02 -0400
+Processing by WordsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:45:in `set_word'
+  [1m[36mCACHE Word Load (0.0ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:13:in `show'
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+Completed 200 OK in 15ms (Views: 0.2ms | ActiveRecord: 0.8ms | Allocations: 2041)
+
+
+Started GET "/words/2" for ::1 at 2021-06-14 16:27:03 -0400
+Processing by WordsController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:45:in `set_word'
+  [1m[36mCACHE Word Load (0.0ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:13:in `show'
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+Completed 200 OK in 14ms (Views: 0.2ms | ActiveRecord: 1.0ms | Allocations: 2041)
+
+
+Started GET "/words/3" for ::1 at 2021-06-14 16:27:04 -0400
+Processing by WordsController#show as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:45:in `set_word'
+  [1m[36mCACHE Word Load (0.0ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:13:in `show'
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+Completed 200 OK in 12ms (Views: 0.2ms | ActiveRecord: 1.1ms | Allocations: 2043)
+
+
+Started GET "/words" for ::1 at 2021-06-14 17:29:03 -0400
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WordsController#index as */*
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+Completed 200 OK in 82ms (Views: 0.1ms | ActiveRecord: 4.5ms | Allocations: 22690)
+
+
+Started GET "/words/2" for ::1 at 2021-06-14 17:43:41 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by WordsController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:45:in `set_word'
+  [1m[36mCACHE Word Load (0.0ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:13:in `show'
+  [1m[36mCategory Load (0.8ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+Completed 200 OK in 17ms (Views: 0.2ms | ActiveRecord: 1.3ms | Allocations: 2307)
+
+
+Started GET "/words/5" for ::1 at 2021-06-14 17:43:43 -0400
+Processing by WordsController#show as */*
+  Parameters: {"id"=>"5"}
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:45:in `set_word'
+  [1m[36mCACHE Word Load (0.0ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:13:in `show'
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/services/word_serializer.rb:14:in `to_serialized_json'
+Completed 200 OK in 26ms (Views: 0.2ms | ActiveRecord: 0.8ms | Allocations: 2063)
+
+

@@ -12,7 +12,7 @@ import BeginningInstructions from "./components/functional/BeginningInstructions
 class App extends Component {
     componentDidMount() {
         //console.log("componentdidMount this.props "+this.props)
-        this.props.fetchAllWords()
+        this.props.pfetchAllWords()
     }
     render() {
         //console.log("render this.props.words "+this.props.words)
@@ -32,13 +32,13 @@ class App extends Component {
                         <td>
                             <Route
                                 path= '/words/'
-                                render={ rp=> <WordList {...rp} words={this.props.words}/>}
+                                render={ rp=> <WordList {...rp} words={this.props.pwords}/>}
                             />
                             </td>
                         <td>
                             <Route
                                 path= '/words/:wordId'
-                                render={(rp) => <WordDisplay {...rp} words={this.props.words}/>}
+                                render={(rp) => <WordDisplay {...rp} words={this.props.pwords}/>}
                             />
                             <Route exact path="/words/new" component={NewWord}/>
                         </td>
@@ -53,13 +53,13 @@ const mapStateToProps = state => {
     //console.log("App.js mapstatetoprops state.wordsReducer.words" + state.wordsReducer.words)
     //debugger;
     return {
-        words: state.wordsReducer.words,
+        pwords: state.wordsReducer.words,
         loading: state.wordsReducer.loading
     }
 }
 const mapDispatchToProps = dispatch => {
     //console.log("App.js: mapDispatchToProps  " );
     //debugger;
-    return {fetchAllWords: () => dispatch(fetchAllWords())}
+    return {pfetchAllWords: () => dispatch(fetchAllWords())}
 }
 export default connect(mapStateToProps, mapDispatchToProps)(App)
